@@ -1,3 +1,5 @@
+var btn_lw = document.getElementById("btn_lineWidth");
+var btn_clear = document.getElementById("clear");
 var teclas = {
   UP: 38,
   DOWN: 40,
@@ -5,13 +7,19 @@ var teclas = {
   RIGHT: 39,
 };
 
+document.addEventListener("click", f_clear);
 document.addEventListener("keydown", dibujarTeclado);
+
 var cuadro = document.getElementById("area_de_dibujo");
 var papel = cuadro.getContext("2d");
 var x = 150;
 var y = 150;
 
 dibujarLinea("red", x - 1, y - 1, x + 1, y + 1, papel);
+
+function f_clear() {
+  cuadro.width = cuadro.width;
+}
 
 function dibujarLinea(color, xin, yin, xfi, yfi, lienzo) {
   lienzo.beginPath();

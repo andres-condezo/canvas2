@@ -6,8 +6,18 @@
     <title>Dibujando con flechas</title>
   </head>
   <body>
+    <h1>Mueve las flechas del teclado para dibujar.</h1>
+    <p>Escoje un grosor de linea escribiendo un número:</p>
+    <input
+      type="button"
+      value="escoger"
+      name="btn_lineWidth"
+      id="btn_lineWidth"
+    />
+    <br />
     <canvas width="300" height="300" id="area_de_dibujo"></canvas>
-    <p>Mueve las flechas del teclado para dibujar.</p>
+    <br />
+    <input type="button" value="Limpiar" name="clear" id="clear" />
     <script src="draw.js"></script>
   </body>
 </html>
