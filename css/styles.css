@@ -8,18 +8,23 @@ body {
   width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: silver;
-  margin: auto auto;
-}
-
-main {
-  width: 100%;
   margin: 0 auto;
 }
 
+main {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
-  color: steelblue;
+  color: white;
+  background-color: steelblue;
   font-size: 26px;
   margin: 40px;
+  padding: 40px;
 }
 input {
   color: steelblue;
