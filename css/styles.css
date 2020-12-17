@@ -7,7 +7,7 @@
 body {
   width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  background-color: silver;
+  background-color: dimgray;
   margin: 0 auto;
 }
 
@@ -17,14 +17,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: silver;
+}
+
+header {
+  width: 100%;
 }
 
 h1 {
   color: white;
   background-color: steelblue;
   font-size: 26px;
-  margin: 40px;
-  padding: 40px;
+  margin: 0px auto;
+  padding: 20px;
 }
 input {
   color: steelblue;
@@ -42,4 +47,11 @@ input {
 canvas {
   background-color: white;
   margin: 40px;
+}
+
+footer {
+  background-color: steelblue;
+  height: 60px;
+  width: 100%;
+  margin-top: 40px;
 }
