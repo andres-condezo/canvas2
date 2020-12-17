@@ -22,13 +22,15 @@ main {
 
 header {
   width: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  background-color: steelblue;
 }
 
 h1 {
   color: white;
-  background-color: steelblue;
   font-size: 26px;
-  margin: 0px auto;
   padding: 20px;
 }
 input {
