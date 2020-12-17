@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Dibujando con flechas</title>
   </head>
   <body>
-    <h1>Mueve las flechas del teclado para dibujar.</h1>
-    <p>Escoje un grosor de linea escribiendo un número:</p>
-    <input
-      type="button"
-      value="escoger"
-      name="btn_lineWidth"
-      id="btn_lineWidth"
-    />
-    <br />
-    <canvas width="300" height="300" id="area_de_dibujo"></canvas>
-    <br />
-    <input type="button" value="Limpiar" name="clear" id="clear" />
-    <script src="draw.js"></script>
+    <main>
+      <h1>Mueve las flechas del teclado para dibujar.</h1>
+      <p class="escoger">Escoge un grosor de linea escribiendo un número:</p>
+      <input type="text" name="number_weight" id="number_weight" />
+      <input
+        type="button"
+        value="escoger"
+        name="btn_lineWidth"
+        id="btn_lineWidth"
+      />
+      <br />
+      <canvas width="300" height="300" id="area_de_dibujo"></canvas>
+      <br />
+      <input type="button" value="Limpiar" name="clear" id="clear" />
+      <script src="draw.js"></script>
+    </main>
   </body>
 </html>

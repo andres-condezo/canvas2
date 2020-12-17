@@ -7,7 +7,7 @@ var teclas = {
   RIGHT: 39,
 };
 
-document.addEventListener("click", f_clear);
+btn_clear.addEventListener("click", f_clear);
 document.addEventListener("keydown", dibujarTeclado);
 
 var cuadro = document.getElementById("area_de_dibujo");
@@ -19,12 +19,14 @@ dibujarLinea("red", x - 1, y - 1, x + 1, y + 1, papel);
 
 function f_clear() {
   cuadro.width = cuadro.width;
+  x = 150;
+  y = 150;
 }
 
 function dibujarLinea(color, xin, yin, xfi, yfi, lienzo) {
   lienzo.beginPath();
   lienzo.strokeStyle = color;
-  lienzo.lineWidth = 3;
+  lienzo.lineWidth = parseInt(btn_lw.value);
   lienzo.moveTo(xin, yin);
   lienzo.lineTo(xfi, yfi);
   lienzo.stroke();
@@ -53,6 +55,5 @@ function dibujarTeclado(evento) {
       x = x + movimiemto;
       break;
     default:
-      console.log("otra tecla");
   }
 }
